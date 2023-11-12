@@ -1,0 +1,30 @@
+45.61.137.162:80   <- Looks like a true positive... No file uploads on VT. Only reports comming in via myself on OTX. My reports date 7 Months ago. Apparently, the IP was pretty busy doing malicious stuff in the same time: https://www.abuseipdb.com/check/45.61.187.156?page=1#report  <- Indicating true positive despite lack of samples 
+
+188.127.227.51:80  <- 4 malicious files reaching out October 2022. 9/88 on VT. No hits on OTX. Gozi_ifsb + Raccoon Stealer sample: https://tria.ge/221013-hjl97sbabq with IP being the Raccoon C2
+
+84.32.188.111:80   <- 3 samples on VT dating 07.2022 and 08.2022, VT rating 9/88. 3 hits on Triage indicating COLIBRI and Raccoon: https://tria.ge/s?q=ip%3A84.32.188.111 where IP is being used for Raccoon C2
+
+45.87.3.111 <- 3 samples on VT dating 02 and 05 2023, VT Rating 13/88, VT comment: RecordBreaker C2 via Arksight, 2 Samples on Triage: https://tria.ge/s?q=ip%3A45.87.3.111 in which Server being used as Raccoon C2
+
+167.235.133.31 <- VT 0 samples, VT Rating 9/88, VT comment: RecordBreaker C2 via Arksight, 2 Raccoon samples on Triage (uploaded 10.2022): https://tria.ge/s?q=ip%3A167.235.133.31 in which Server is being used as Raccoon C2
+
+
+88.119.171.62:80 <- 33 samples on VT (all 40+ detections, all 05.2023), VT rating 11/88, vetted by ArkSight from ThreatFox it seems,1 sample on Triage https://tria.ge/s?q=ip%3A88.119.171.62 where IP is used as C2 for Raccoon/RecordBreaker 
+
+134.255.216.148:80 <- 27 samples on VT (all 40+ detections, between 04-11.2023), VT Rating 5/88, 0 samples on Triage, Continuesly vetted by my script between 07 and 08.20231
+
+
+193.142.147.59:80 <- 77 samples on VT (30+ detections, around 09 and 10 2023), VT Rating 16/88, many samples on Triage: https://tria.ge/s?q=ip%3A193.142.147.59 all Raccoon related.
+
+162.0.217.254:443 (Rhadamanthys) <- True False positive. Related to IP lookup service 2ip.ua, deleted from Threatfox!
+
+88.119.174.113:443 <- 4 samples on VT(10 & 11 2020, 11 2021, 11 2023 ), VT Rating 9/88, VT comment (10.2020: Ryuk in 5 hours,  1 sample on Triage where sample has IP as SystemBC C2. https://tria.ge/220220-kk55tabfhm
+
+45.67.228.250:80 <- 59 samples on VT (28+ detections, uploaded 2020-2023), VT Rating 6/88, 12 scans on Triage https://tria.ge/s?q=ip%3A45.67.228.250, all RedLine
+
+89.23.107.113:80 <- 0 samples on VT, VT rating 6/88, source is my own script scanning the global internet for Raccoon C2s on 03.08.2023. Seen ones. Might be considered a FP due to lack of samples. No way to check if detection by script was FP. However never had a FP report for Raccon Script results afaik. Same ASN as true positive below.
+
+89.23.107.49:80 <- 5 samples on VT (18+ detections, 08 & 09 2023), VT rating 13/88
+
+172.0.0.1:80
+172.0.0.1:443  <- IP 172.0.0.1 is a very difficult one. There is 214 samples on VT. Majority being malicious. There is 2 NJRat and 1 AsyncRat sample. Also malicious. The IP is owned by AT&T. It is therefor a legitimate ip adress. However, I do believe there is a high chance of FPs here. It could be ThreatActors (and even researchers) trying out their tools and misstyping localhost IP. I leave the decision of deletion to you.
